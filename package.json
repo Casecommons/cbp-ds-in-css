@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "rm -rf ./css/* && sass scss:css",
-    "sass:compact": "rm -rf ./css/* && sass scss:css --style compressed --no-source-map"
+    "sass:unminified": "rm -rf ./css/* && sass scss:css",
+    "sass": "rm -rf ./css/* && sass scss:css --style compressed --no-source-map"
   },
   "author": "",
   "license": "ISC",
