@@ -1,0 +1,27 @@
+$avatar-sizes: (
+  extra-small: (size: 32px, text-size: 13px),
+  small: (size: 40px, text-size: 16px),
+  medium: (size: 64px, text-size: 20px),
+  large: (size: 80px, text-size: 28px),
+  extra-large: (size: 200px, text-size: 56px),
+);
+
+@each $name, $avatar-size in $avatar-sizes {
+  .cb-avatar.cb-#{$name} {
+    height: map-get($avatar-size, "size");
+    width: map-get($avatar-size, "size");
+    font-size: map-get($avatar-size, "text-size");
+  }
+}
+
+.cb-avatar {
+  padding: unset;
+  border-radius: 100%;
+  @extend .cb-small;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba($cb-color-stratus-700, 0.2);
+  font-family: $cb-font;
+}
+

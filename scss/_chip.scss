@@ -1,0 +1,54 @@
+
+/* chips */
+.cb-chip {
+  border-radius: $cb-border-radius-huge;
+  background-color: $cb-color-stratus-500;
+  color: $cb-color-matter-400;
+  height: calc(4 * $cb-unit);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: calc(1.5 * $cb-unit);
+  padding-right: calc(1.5 * $cb-unit);
+  @extend .cb-callout;
+}
+.cb-chip.cb-compact {
+  height: calc(3 * $cb-unit)
+}
+
+$chip-colors: (
+  active: $cb-color-indigo-100,
+  alert: $cb-color-framboise-100,
+  caution: $cb-color-millennial-200,
+  neutral-ocean: $cb-color-ocean-100,
+  neutral-heather: $cb-color-heather-100,
+  neutral-patina: $cb-color-patina-100,
+);
+
+@each $name, $color in $chip-colors {
+  .cb-chip.cb-#{$name} {
+    background-color: $color;
+  }
+}
+
+.cb-chip.cb-outlined {
+  background-color: transparent;
+  border: solid;
+  border-width: $cb-border-width-emphasis;
+  border-color: $cb-color-stratus-900;
+}
+
+$outlined-chip-colors: (
+  active: $cb-color-indigo-300,
+  alert: $cb-color-framboise-300,
+  caution: $cb-color-millennial-400,
+  neutral-ocean: $cb-color-ocean-300,
+  neutral-heather: $cb-color-heather-300,
+  neutral-patina: $cb-color-patina-300,
+);
+
+@each $name, $color in $outlined-chip-colors {
+  .cb-chip.cb-outlined.cb-#{$name} {
+    border-color: $color;
+  }
+}

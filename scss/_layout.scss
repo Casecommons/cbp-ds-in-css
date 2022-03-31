@@ -1,0 +1,78 @@
+/* LAYOUT */
+
+.cb-full-width {
+  width: 100%;
+}
+.cb-full-height {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.flex-shrink {
+  flex-shrink: 1;
+}
+
+$flex-directions: row, column, row-reverse, column-reverse;
+
+@each $dir in $flex-directions {
+  .flex-direction-#{$dir} {
+    flex-direction: $dir;
+  }
+}
+
+$flex-wraps: wrap, nowrap, wrap-reverse;
+
+@each $wrap in $flex-wraps {
+  .flex-wrap-#{$wrap} {
+    flex-wrap: $wrap;
+  }
+}
+
+$alignments: stretch, center, flex-start, flex-end, baseline, initial, inherit;
+$justifications: flex-start, center, flex-end, space-between, space-around, stretch, space-evenly, initial, inherit;
+
+@each $justification in $justifications {
+  .justify-#{$justification} {
+    justify-content: $justification;
+  }
+}
+@each $alignment in $alignments {
+  .align-items-#{$alignment} {
+    align-items: $alignment;
+  }
+}
+
+@each $size, $size-space in $sizes {
+  .gap-#{$size} {
+    gap: $size-space;
+  }
+}
+
+$overflows: scroll, auto, hidden;
+
+@each $overflow in $overflows {
+  .overflow-#{$overflow} {
+    overflow: $overflow;
+  }
+  .overflow-x-#{$overflow} {
+    overflow-x: $overflow;
+  }
+  .overflow-y-#{$overflow} {
+    overflow-y: $overflow;
+  }
+}
+
+$columns: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+
+@each $column in $columns {
+  .column-#{$column} {
+    width: calc(100% * $column / 12);
+  }
+}

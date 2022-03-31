@@ -1,0 +1,253 @@
+/* 
+ * COLORS 
+ */
+
+$cb-color-framboise-25: #fef1f5;
+$cb-color-framboise-50: #fce2eb;
+$cb-color-framboise-100: #f7b6ce;
+$cb-color-framboise-200: #f185ae;
+$cb-color-framboise-300: #eb548d;
+$cb-color-framboise-400: #dd266a;
+$cb-color-framboise-500: #e30b5c;
+$cb-color-framboise-600: #e00a54;
+$cb-color-framboise-700: #dc084a;
+$cb-color-framboise-800: #d80641;
+$cb-color-framboise-900: #d00330;
+$cb-color-heather-25: #f7f6fa;
+$cb-color-heather-50: #efedf5;
+$cb-color-heather-100: #d7d2e7;
+$cb-color-heather-200: #bdb5d7;
+$cb-color-heather-300: #a397c7;
+$cb-color-heather-400: #8f80bb;
+$cb-color-heather-500: #7b6aaf;
+$cb-color-heather-600: #7362a8;
+$cb-color-heather-700: #68579f;
+$cb-color-heather-800: #5e4d96;
+$cb-color-heather-900: #4b3c86;
+$cb-color-indigo-25: #f1f3f7;
+$cb-color-indigo-50: #e2e6ee;
+$cb-color-indigo-100: #b6c1d5;
+$cb-color-indigo-200: #8697b9;
+$cb-color-indigo-300: #556d9d;
+$cb-color-indigo-400: #304e88;
+$cb-color-indigo-500: #0c2f73;
+$cb-color-indigo-600: #0a2a6b;
+$cb-color-indigo-700: #082360;
+$cb-color-indigo-800: #061d56;
+$cb-color-indigo-900: #031243;
+$cb-color-matter-25: #f0f1f2;
+$cb-color-matter-50: #e1e2e4;
+$cb-color-matter-100: #b3b6bc;
+$cb-color-matter-200: #686e79;
+$cb-color-matter-300: #4f5663;
+$cb-color-matter-400: #242c3c;
+$cb-color-matter-500: #030d20;
+$cb-color-matter-600: #030b1c;
+$cb-color-matter-700: #020918;
+$cb-color-matter-800: #020713;
+$cb-color-matter-900: #01030b;
+$cb-color-millennial-25: #fffcf2;
+$cb-color-millennial-50: #fef9e5;
+$cb-color-millennial-100: #fcefbd;
+$cb-color-millennial-200: #fae592;
+$cb-color-millennial-300: #f8db66;
+$cb-color-millennial-400: #f7d345;
+$cb-color-millennial-500: #f5cb24;
+$cb-color-millennial-600: #f4c620;
+$cb-color-millennial-700: #f2be1b;
+$cb-color-millennial-800: #f0b816;
+$cb-color-millennial-900: #eeac0d;
+$cb-color-nightshade-25: #f4f3f4;
+$cb-color-nightshade-50: #e9e7e9;
+$cb-color-nightshade-100: #c8c4c8;
+$cb-color-nightshade-200: #a39da4;
+$cb-color-nightshade-300: #746b75;
+$cb-color-nightshade-400: #635863;
+$cb-color-nightshade-500: #473a48;
+$cb-color-nightshade-600: #403441;
+$cb-color-nightshade-700: #372c38;
+$cb-color-nightshade-800: #2f2530;
+$cb-color-nightshade-900: #201821;
+$cb-color-ocean-25: #f1fafc;
+$cb-color-ocean-50: #e2f5f9;
+$cb-color-ocean-100: #b6e6f0;
+$cb-color-ocean-200: #85d6e6;
+$cb-color-ocean-300: #54c5dc;
+$cb-color-ocean-400: #2fb8d5;
+$cb-color-ocean-500: #0aaccd;
+$cb-color-ocean-600: #09a5c8;
+$cb-color-ocean-700: #079bc1;
+$cb-color-ocean-800: #0592ba;
+$cb-color-ocean-900: #007da9;
+$cb-color-patina-25: #f0f8f7;
+$cb-color-patina-50: #e1f0ef;
+$cb-color-patina-100: #b3d9d7;
+$cb-color-patina-200: #81bfbd;
+$cb-color-patina-300: #4ea5a3;
+$cb-color-patina-400: #28928f;
+$cb-color-patina-500: #027f7b;
+$cb-color-patina-600: #027773;
+$cb-color-patina-700: #016c68;
+$cb-color-patina-800: #01625e;
+$cb-color-patina-900: #014f4b;
+$cb-color-stratus-25: #fefefe;
+$cb-color-stratus-50: #fcfcfc;
+$cb-color-stratus-100: #f8f8f8;
+$cb-color-stratus-200: #f3f3f4;
+$cb-color-stratus-300: #eeeef0;
+$cb-color-stratus-400: #ebebec;
+$cb-color-stratus-500: #e7e7e9;
+$cb-color-stratus-600: #e4e4e6;
+$cb-color-stratus-700: #e0e0e3;
+$cb-color-stratus-800: #dddddf;
+$cb-color-stratus-900: #d7d7d9;
+
+:root {
+  --cb-color-framboise-25: #{$cb-color-framboise-25};
+  --cb-color-framboise-50: #{$cb-color-framboise-50};
+  --cb-color-framboise-100: #{$cb-color-framboise-100};
+  --cb-color-framboise-200: #{$cb-color-framboise-200};
+  --cb-color-framboise-300: #{$cb-color-framboise-300};
+  --cb-color-framboise-400: #{$cb-color-framboise-400};
+  --cb-color-framboise-500: #{$cb-color-framboise-500};
+  --cb-color-framboise-600: #{$cb-color-framboise-600};
+  --cb-color-framboise-700: #{$cb-color-framboise-700};
+  --cb-color-framboise-800: #{$cb-color-framboise-800};
+  --cb-color-framboise-900: #{$cb-color-framboise-900};
+  --cb-color-heather-25: #{$cb-color-heather-25};
+  --cb-color-heather-50: #{$cb-color-heather-50};
+  --cb-color-heather-100: #{$cb-color-heather-100};
+  --cb-color-heather-200: #{$cb-color-heather-200};
+  --cb-color-heather-300: #{$cb-color-heather-300};
+  --cb-color-heather-400: #{$cb-color-heather-400};
+  --cb-color-heather-500: #{$cb-color-heather-500};
+  --cb-color-heather-600: #{$cb-color-heather-600};
+  --cb-color-heather-700: #{$cb-color-heather-700};
+  --cb-color-heather-800: #{$cb-color-heather-800};
+  --cb-color-heather-900: #{$cb-color-heather-900};
+  --cb-color-indigo-25: #{$cb-color-indigo-25};
+  --cb-color-indigo-50: #{$cb-color-indigo-50};
+  --cb-color-indigo-100: #{$cb-color-indigo-100};
+  --cb-color-indigo-200: #{$cb-color-indigo-200};
+  --cb-color-indigo-300: #{$cb-color-indigo-300};
+  --cb-color-indigo-400: #{$cb-color-indigo-400};
+  --cb-color-indigo-500: #{$cb-color-indigo-500};
+  --cb-color-indigo-600: #{$cb-color-indigo-600};
+  --cb-color-indigo-700: #{$cb-color-indigo-700};
+  --cb-color-indigo-800: #{$cb-color-indigo-800};
+  --cb-color-indigo-900: #{$cb-color-indigo-900};
+  --cb-color-matter-25: #{$cb-color-matter-25};
+  --cb-color-matter-50: #{$cb-color-matter-50};
+  --cb-color-matter-100: #{$cb-color-matter-100};
+  --cb-color-matter-200: #{$cb-color-matter-200};
+  --cb-color-matter-300: #{$cb-color-matter-300};
+  --cb-color-matter-400: #{$cb-color-matter-400};
+  --cb-color-matter-500: #{$cb-color-matter-500};
+  --cb-color-matter-600: #{$cb-color-matter-600};
+  --cb-color-matter-700: #{$cb-color-matter-700};
+  --cb-color-matter-800: #{$cb-color-matter-800};
+  --cb-color-matter-900: #{$cb-color-matter-900};
+  --cb-color-millennial-25: #{$cb-color-millennial-25};
+  --cb-color-millennial-50: #{$cb-color-millennial-50};
+  --cb-color-millennial-100: #{$cb-color-millennial-100};
+  --cb-color-millennial-200: #{$cb-color-millennial-200};
+  --cb-color-millennial-300: #{$cb-color-millennial-300};
+  --cb-color-millennial-400: #{$cb-color-millennial-400};
+  --cb-color-millennial-500: #{$cb-color-millennial-500};
+  --cb-color-millennial-600: #{$cb-color-millennial-600};
+  --cb-color-millennial-700: #{$cb-color-millennial-700};
+  --cb-color-millennial-800: #{$cb-color-millennial-800};
+  --cb-color-millennial-900: #{$cb-color-millennial-900};
+  --cb-color-nightshade-25: #{$cb-color-nightshade-25};
+  --cb-color-nightshade-50: #{$cb-color-nightshade-50};
+  --cb-color-nightshade-100: #{$cb-color-nightshade-100};
+  --cb-color-nightshade-200: #{$cb-color-nightshade-200};
+  --cb-color-nightshade-300: #{$cb-color-nightshade-300};
+  --cb-color-nightshade-400: #{$cb-color-nightshade-400};
+  --cb-color-nightshade-500: #{$cb-color-nightshade-500};
+  --cb-color-nightshade-600: #{$cb-color-nightshade-600};
+  --cb-color-nightshade-700: #{$cb-color-nightshade-700};
+  --cb-color-nightshade-800: #{$cb-color-nightshade-800};
+  --cb-color-nightshade-900: #{$cb-color-nightshade-900};
+  --cb-color-ocean-25: #{$cb-color-ocean-25};
+  --cb-color-ocean-50: #{$cb-color-ocean-50};
+  --cb-color-ocean-100: #{$cb-color-ocean-100};
+  --cb-color-ocean-200: #{$cb-color-ocean-200};
+  --cb-color-ocean-300: #{$cb-color-ocean-300};
+  --cb-color-ocean-400: #{$cb-color-ocean-400};
+  --cb-color-ocean-500: #{$cb-color-ocean-500};
+  --cb-color-ocean-600: #{$cb-color-ocean-600};
+  --cb-color-ocean-700: #{$cb-color-ocean-700};
+  --cb-color-ocean-800: #{$cb-color-ocean-800};
+  --cb-color-ocean-900: #{$cb-color-ocean-900};
+  --cb-color-patina-25: #{$cb-color-patina-25};
+  --cb-color-patina-50: #{$cb-color-patina-50};
+  --cb-color-patina-100: #{$cb-color-patina-100};
+  --cb-color-patina-200: #{$cb-color-patina-200};
+  --cb-color-patina-300: #{$cb-color-patina-300};
+  --cb-color-patina-400: #{$cb-color-patina-400};
+  --cb-color-patina-500: #{$cb-color-patina-500};
+  --cb-color-patina-600: #{$cb-color-patina-600};
+  --cb-color-patina-700: #{$cb-color-patina-700};
+  --cb-color-patina-800: #{$cb-color-patina-800};
+  --cb-color-patina-900: #{$cb-color-patina-900};
+  --cb-color-stratus-25: #{$cb-color-stratus-25};
+  --cb-color-stratus-50: #{$cb-color-stratus-50};
+  --cb-color-stratus-100: #{$cb-color-stratus-100};
+  --cb-color-stratus-200: #{$cb-color-stratus-200};
+  --cb-color-stratus-300: #{$cb-color-stratus-300};
+  --cb-color-stratus-400: #{$cb-color-stratus-400};
+  --cb-color-stratus-500: #{$cb-color-stratus-500};
+  --cb-color-stratus-600: #{$cb-color-stratus-600};
+  --cb-color-stratus-700: #{$cb-color-stratus-700};
+  --cb-color-stratus-800: #{$cb-color-stratus-800};
+  --cb-color-stratus-900: #{$cb-color-stratus-900};
+}
+
+$cb-color-white: #ffffff;
+
+$color-names: framboise, heather, "indigo", matter, millennial, nightshade, ocean, patina, stratus;
+$color-tones: 25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900;
+
+/* TEXT COLORS */
+
+$cb-color-text-primary: $cb-color-matter-500;
+$cb-color-text-primary-alt: $cb-color-matter-400;
+$cb-color-text-secondary: $cb-color-matter-300;
+$cb-color-text-disabled: $cb-color-matter-100;
+
+/* SEMANTIC COLORS */
+$cb-color-primary: $cb-color-heather-600;
+$cb-color-secondary: $cb-color-patina-700;
+$cb-color-required: $cb-color-patina-900;
+$cb-color-error: $cb-color-framboise-900;
+$cb-color-border: $cb-color-matter-100;
+$cb-color-icon: $cb-color-matter-200;
+
+/* SHADOWS */
+$cb-shadow-card: 0 0 0 calc($cb-unit / 8)
+    rgba($cb-color-matter-500, 0.02),
+  0 0 $cb-unit calc($cb-unit / 4)
+    rgba($cb-color-matter-500, 0.14);
+
+@each $color in $color-names {
+  @each $tone in $color-tones {
+    .cb-color-#{$color}-#{$tone} {
+      color: var(--cb-color-#{$color}-#{$tone});
+    }
+    .cb-background-color-#{$color}-#{$tone} {
+      background-color: var(--cb-color-#{$color}-#{$tone});
+    }
+    .cb-border-color-#{$color}-#{$tone} {
+      border-color: var(--cb-color-#{$color}-#{$tone});
+    }
+  }
+}
+
+.cb-color-white {
+  color: $cb-color-white
+}
+
+.cb-background-color-white {
+  background-color: $cb-color-white;
+}

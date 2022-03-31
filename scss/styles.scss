@@ -1,0 +1,37 @@
+@import "metrics";
+@import "colors";
+@import "typography";
+@import "gradients";
+@import "button";
+@import "card";
+@import "chip";
+@import "layout";
+@import "focus";
+@import "link";
+@import "table";
+@import "avatar";
+
+/* 
+* GLOBAL
+*/
+
+.baseline * {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.baseline {
+  background: $cb-color-white;
+  color: $cb-color-text-primary;
+  font-family: $cb-font;
+  font-size: $cb-font-size;
+  font-weight: 400;
+}
+
+/* Interactability */
+
+*:disabled {
+  opacity: 0.33;
+  cursor: not-allowed !important;
+}
+

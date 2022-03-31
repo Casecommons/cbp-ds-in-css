@@ -1,0 +1,177 @@
+/* 
+* GRADIENTS
+*/
+
+$cb-gradient-angle: 72deg;
+$cb-gradient-start-percentage: 24%;
+$cb-gradient-end-percentage: 100%;
+
+$cb-gradient-heather-dark: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-heather-900 $cb-gradient-start-percentage,
+  $cb-color-heather-700 $cb-gradient-end-percentage
+);
+$cb-gradient-heather-framboise: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-heather-500 $cb-gradient-start-percentage,
+  $cb-color-framboise-500 $cb-gradient-end-percentage
+);
+$cb-gradient-heather-patina: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-heather-500 $cb-gradient-start-percentage,
+  $cb-color-patina-500 $cb-gradient-end-percentage
+);
+$cb-gradient-heather-patina-dark: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-heather-900 $cb-gradient-start-percentage,
+  $cb-color-patina-500 $cb-gradient-end-percentage
+);
+$cb-gradient-heather-patina-light: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-heather-50 $cb-gradient-start-percentage,
+  $cb-color-patina-50 $cb-gradient-end-percentage
+);
+$cb-gradient-indigo: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-indigo-500 $cb-gradient-start-percentage,
+  $cb-color-indigo-300 $cb-gradient-end-percentage
+);
+$cb-gradient-indigo-dark: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-indigo-900 $cb-gradient-start-percentage,
+  $cb-color-indigo-600 $cb-gradient-end-percentage
+);
+$cb-gradient-indigo-framboise: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-indigo-500 $cb-gradient-start-percentage,
+  $cb-color-framboise-400 $cb-gradient-end-percentage
+);
+$cb-gradient-indigo-heather: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-indigo-600 $cb-gradient-start-percentage,
+  $cb-color-heather-500 $cb-gradient-end-percentage
+);
+$cb-gradient-indigo-heather-light: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-indigo-100 $cb-gradient-start-percentage,
+  $cb-color-heather-200 $cb-gradient-end-percentage
+);
+$cb-gradient-indigo-light: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-indigo-200 $cb-gradient-start-percentage,
+  $cb-color-indigo-100 $cb-gradient-end-percentage
+);
+$cb-gradient-indigo-patina: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-indigo-500 $cb-gradient-start-percentage,
+  $cb-color-patina-500 $cb-gradient-end-percentage
+);
+$cb-gradient-framboise: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-framboise-600 $cb-gradient-start-percentage,
+  $cb-color-framboise-400 $cb-gradient-end-percentage
+);
+$cb-gradient-matter-dark: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-matter-700 $cb-gradient-start-percentage,
+  $cb-color-matter-500 $cb-gradient-end-percentage
+);
+$cb-gradient-millennial: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-millennial-600 $cb-gradient-start-percentage,
+  $cb-color-millennial-300 $cb-gradient-end-percentage
+);
+$cb-gradient-nightshade-dark: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-nightshade-900 $cb-gradient-start-percentage,
+  $cb-color-nightshade-600 $cb-gradient-end-percentage
+);
+$cb-gradient-nightshade-light: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-nightshade-200 $cb-gradient-start-percentage,
+  $cb-color-nightshade-100 $cb-gradient-end-percentage
+);
+$cb-gradient-patina-dark: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-patina-900 $cb-gradient-start-percentage,
+  $cb-color-patina-500 $cb-gradient-end-percentage
+);
+$cb-gradient-patina-millennial-light: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-patina-200 $cb-gradient-start-percentage,
+  $cb-color-millennial-200 $cb-gradient-end-percentage
+);
+$cb-gradient-stratus-light: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-stratus-200 $cb-gradient-start-percentage,
+  $cb-color-stratus-100 $cb-gradient-end-percentage
+);
+
+$cb-gradient-button-standard: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-stratus-600 $cb-gradient-start-percentage,
+  $cb-color-stratus-800 $cb-gradient-end-percentage
+);
+
+$cb-gradient-button-standard-hover: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-stratus-800 $cb-gradient-start-percentage,
+  $cb-color-stratus-900 $cb-gradient-end-percentage
+);
+
+$cb-gradient-button-primary: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-heather-500 $cb-gradient-start-percentage,
+  $cb-color-heather-700 $cb-gradient-end-percentage
+);
+
+$cb-gradient-button-primary-hover: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-heather-600 $cb-gradient-start-percentage,
+  $cb-color-heather-800 $cb-gradient-end-percentage
+);
+
+$cb-gradient-button-workflow: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-patina-500 $cb-gradient-start-percentage,
+  $cb-color-patina-700 $cb-gradient-end-percentage
+);
+
+$cb-gradient-button-workflow-hover: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-patina-700 $cb-gradient-start-percentage,
+  $cb-color-patina-900 $cb-gradient-end-percentage
+);
+
+$cb-gradient-button-destructive: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-framboise-400 $cb-gradient-start-percentage,
+  $cb-color-framboise-600 $cb-gradient-end-percentage
+);
+
+$cb-gradient-button-destructive-hover: linear-gradient(
+  $cb-gradient-angle,
+  $cb-color-framboise-600 $cb-gradient-start-percentage,
+  $cb-color-framboise-800 $cb-gradient-end-percentage
+);
+
+$gradients: (
+  framboise: $cb-gradient-framboise,
+  heather-dark: $cb-gradient-heather-dark,
+  heather-framboise: $cb-gradient-heather-framboise,
+  heather-patina: $cb-gradient-heather-patina,
+  heather-patina-dark: $cb-gradient-heather-patina-dark,
+  heather-patina-light: $cb-gradient-heather-patina-light,
+  "indigo": $cb-gradient-indigo,
+  indigo-dark: $cb-gradient-indigo-dark,
+  indigo-framboise: $cb-gradient-indigo-framboise,
+  indigo-heather: $cb-gradient-indigo-heather,
+);
+
+@each $name, $gradient in $gradients {
+
+  .cb-background-gradient-#{$name} {
+    background-color: $gradient;
+  }
+}
+

@@ -1,0 +1,47 @@
+
+/* 
+ * FOCUS
+ */
+
+ *:focus-visible {
+  outline: none;
+  box-shadow: $cb-color-white 0 0 0 $cb-border-width-emphasis,
+    $cb-color-primary 0 0 0 $cb-border-width-focus;
+}
+
+.cb-inset-focus:focus-visible {
+  box-shadow: $cb-color-white inset 0 0 0 $cb-border-width-emphasis,
+    $cb-color-primary inset 0 0 0 $cb-border-width-focus;
+}
+
+.cb-tab-focus:focus-visible {
+  box-shadow: $cb-color-primary inset 0 0 0
+      $cb-border-width-emphasis,
+    $cb-color-white inset 0 0 0 $cb-border-width-focus;
+}
+
+.cb-round-focus:focus-visible {
+  box-shadow: $cb-color-primary 0 0 0 $cb-border-width-emphasis;
+  border: $cb-border-width-emphasis solid $cb-color-white;
+}
+
+.cb-secondary:focus-visible,
+.cb-workflow:focus-visible,
+.cb-workflow-focus:focus-visible,
+.cb-secondary-focus:focus-visible {
+  box-shadow: $cb-color-white 0 0 0 $cb-border-width-emphasis,
+    $cb-color-secondary 0 0 0 $cb-border-width-focus;
+}
+
+.cb-error:focus-visible,
+.cb-destructive:focus-visible,
+.cb-error-focus:focus-visible,
+.cb-destructive-focus:focus-visible {
+  box-shadow: $cb-color-white 0 0 0 $cb-border-width-emphasis,
+    $cb-color-error 0 0 0 $cb-border-width-focus;
+}
+
+.cb-destructive-round-focus:focus-visible {
+  box-shadow: $cb-color-error 0 0 0 $cb-border-width-emphasis;
+  border: $cb-border-width-emphasis solid $cb-color-white;
+}

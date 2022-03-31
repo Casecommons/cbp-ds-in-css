@@ -1,0 +1,145 @@
+/*
+* METRICS
+*/
+
+$cb-unit: 8px;
+
+/* spacing */
+$cb-spacing-tiny: calc($cb-unit / 2);
+$cb-spacing-dense: $cb-unit;
+$cb-spacing-default: calc($cb-unit * 2);
+$cb-spacing-medium: calc($cb-unit * 3);
+$cb-spacing-large: calc($cb-unit * 4);
+$cb-spacing-extra-large: calc($cb-unit * 6);
+$cb-spacing-huge: calc($cb-unit * 7);
+
+/* height */
+/* retrofitted to accommodate 44px */
+$cb-height-default: calc($cb-unit * 5.5);
+/* retrofitted to accommodate 36px */
+$cb-height-compact: calc($cb-unit * 4.5);
+$cb-height-compactChip: calc($cb-unit * 3);
+$cb-height-iconButtonMini: calc($cb-unit * 4);
+$cb-height-iconButtonBase: calc($cb-unit * 5);
+$cb-height-iconButton: calc($cb-unit * 6);
+$cb-height-fabButton: calc($cb-unit * 7);
+$cb-height-appbarOffset: calc($cb-unit * 14);
+$cb-height-autocompleteModal: calc($cb-unit * 64);
+
+/* width */
+$cb-width-navDrawerMini: calc($cb-unit * 12);
+$cb-width-compact: calc($cb-unit * 28);
+$cb-width-navDrawer: calc($cb-unit * 32);
+$cb-width-autocompleteModal: calc($cb-unit * 56);
+$cb-width-readableText: calc($cb-unit * 78);
+
+/* borders */
+
+$cb-border-width-default: 1px;
+$cb-border-width-emphasis: calc($cb-border-width-default * 2);
+$cb-border-width-focus: calc($cb-border-width-emphasis * 2);
+$cb-border-radius-subtle: 2px;
+$cb-border-radius-default: 3px;
+$cb-border-radius-big: $cb-unit;
+$cb-border-radius-huge: calc($cb-unit * 2);
+
+$border-widths: (
+  default: $cb-border-width-default,
+  emphasis: $cb-border-width-emphasis,
+  focus: $cb-border-width-focus,
+);
+
+@each $name, $width in $border-widths {
+  .cb-border-width#{$name} {
+    border-width: $width;
+  }
+}
+
+$border-styles: solid, dotted;
+
+@each $style in $border-styles {
+  .cb-border-style-#{$style} {
+    border-style: $style;
+  }
+}
+
+$border-radii: (
+  subtle: $cb-border-radius-subtle,
+  default: $cb-border-radius-default,
+  big: $cb-border-radius-big,
+  huge: $cb-border-radius-huge,
+);
+
+$corners: top-left, top-right, bottom-left, bottom-right;
+
+@each $name, $radius in $border-radii {
+  .cb-border-radius-#{$name} {
+    border-radius: $radius;
+  }
+  @each $corner in $corners {
+    .cb-border-#{$corner}-radius-#{$name} {
+      border-#{$corner}-radius: $radius;
+    }
+  }
+}
+
+$sides: top, right, bottom, left;
+$sizes: (
+  tiny: $cb-spacing-tiny,
+  dense: $cb-spacing-dense,
+  default: $cb-spacing-default,
+  medium: $cb-spacing-medium,
+  large: $cb-spacing-large,
+  extra-large: $cb-spacing-extra-large,
+  huge: $cb-spacing-huge,
+);
+
+.cb-no-margin {
+  margin: 0 !important;
+}
+
+.cb-no-padding {
+  padding: 0 !important;
+}
+
+@each $side in $sides {
+  .cb-no-padding-#{$side} {
+    padding-#{$side}: 0 !important;
+  }
+  .cb-no-margin-#{$side} {
+    margin-#{$side}: 0 !important;
+  }
+}
+
+@each $size, $size-space in $sizes {
+  .cb-pad-#{$size} {
+    padding: $size-space;
+  }
+  @each $side in $sides {
+    .cb-pad-#{$side}-#{$size} {
+      padding-#{$side}: $size-space;
+    }
+    .cb-margin-#{$side}-#{$size} {
+      margin-#{$side}: $size-space;
+    }
+  }
+  .cb-pad-#{$size}-horizontal {
+    padding-left: $size-space;
+    padding-right: $size-space;
+  }
+  .cb-pad-#{$size}-vertical {
+    padding-top: $size-space;
+    padding-bottom: $size-space;
+  }
+  .cb-margin-#{$size} {
+    margin: $size-space;
+  }
+  .cb-margin-#{$size}-horizontal {
+    margin-left: $size-space;
+    margin-right: $size-space;
+  }
+  .cb-margin-#{$size}-vertical {
+    margin-top: $size-space;
+    margin-bottom: $size-space;
+  }
+}

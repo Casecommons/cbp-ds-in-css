@@ -1,0 +1,18 @@
+/* links */
+.cb-link, .cb-link-external {
+  color: $cb-color-primary;
+  text-decoration: underline;
+}
+
+.cb-link-external.cb-color-inherit,.cb-link.cb-color-inherit {
+  color: inherit;
+}
+
+.cb-link-external.cb-no-underline, .cb-link.cb-no-underline {
+  text-decoration: none;
+}
+
+.cb-link[target="_blank"]:after,
+.cb-link-external:after {
+  content: "\00a0[↗]";
+}

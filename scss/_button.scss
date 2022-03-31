@@ -1,0 +1,91 @@
+button, .cb-button {
+  cursor: pointer;
+}
+
+.cb-button {
+  line-height: calc($cb-unit * 3);
+  letter-spacing: normal;
+  color: $cb-color-text-primary;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  border-radius: $cb-border-radius-huge;
+  border: 1px solid;
+  border-color: $cb-color-stratus-600;
+  background: $cb-gradient-button-standard;
+  padding-left: $cb-spacing-medium;
+  padding-right: $cb-spacing-medium;
+  height: $cb-height-default;
+  font-size: $cb-font-size;
+  font-weight: 500;
+}
+
+.cb-button.cb-text-only {
+  background: transparent;
+  border-color: transparent;
+  color: $cb-color-matter-300;
+}
+
+.cb-button.cb-primary.cb-text-only {
+  background: transparent;
+  border-color: transparent;
+  color: $cb-color-heather-600;
+}
+
+.cb-button.cb-workflow.cb-text-only {
+  background: transparent;
+  border-color: transparent;
+  color: $cb-color-patina-600;
+}
+
+.cb-button.cb-destructive.cb-text-only {
+  background: transparent;
+  border-color: transparent;
+  color: $cb-color-framboise-700;
+}
+
+.cb-button:not(:disabled):not(.cb-text-only):hover {
+  background: $cb-gradient-button-standard-hover;
+}
+
+.cb-button.cb-compact {
+  height: $cb-height-compact;
+}
+
+.cb-button.cb-primary {
+  color: $cb-color-white;
+  border-color: $cb-color-primary;
+  background: $cb-gradient-button-primary;
+}
+
+.cb-button.cb-primary:not(:disabled):not(.cb-text-only):hover {
+  background: $cb-gradient-button-primary-hover;
+}
+
+.cb-button.cb-workflow {
+  color: $cb-color-white;
+  border-color: $cb-color-secondary;
+  background: $cb-gradient-button-workflow;
+}
+
+.cb-button.cb-workflow:not(:disabled):not(.cb-text-only):hover {
+  background: $cb-gradient-button-workflow-hover;
+}
+
+.cb-button.cb-destructive {
+  color: $cb-color-white;
+  border-color: $cb-color-error;
+  background: $cb-gradient-button-destructive;
+}
+
+.cb-button.cb-destructive:not(:disabled):not(.cb-text-only):hover {
+  background: $cb-gradient-button-destructive-hover;
+}
+
+.cb-button-group {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: $cb-unit;
+}

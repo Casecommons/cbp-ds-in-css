@@ -1,0 +1,25 @@
+/* cards */
+
+.cb-card {
+  background: $cb-color-white;
+  border-radius: $cb-border-radius-huge;
+  box-shadow: $cb-shadow-card;
+  padding: $cb-spacing-default $cb-spacing-medium;
+}
+.cb-card.cb-transparent {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+}
+.cb-card.cb-summary {
+  background: $cb-gradient-heather-patina-light;
+  box-shadow: none;
+}
+.cb-card-header {
+  padding-bottom: $cb-spacing-dense;
+  font-weight: 500;
+}
+.cb-card-header.cb-border {
+  border-bottom: 1px solid $cb-color-matter-50;
+  margin-bottom: $cb-spacing-default;
+}

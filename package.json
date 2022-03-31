@@ -1,0 +1,16 @@
+{
+  "name": "ds-in-css",
+  "version": "0.0.1",
+  "description": "DS in CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "rm -rf ./css/* && sass scss:css",
+    "sass:compact": "rm -rf ./css/* && sass scss:css --style compressed --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.10"
+  }
+}
