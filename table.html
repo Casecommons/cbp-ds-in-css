@@ -1,136 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DS in CSS</title>
+  <title>DS in CSS - Table</title>
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
+
 <body class="baseline">
   <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
   <h2 class="cb-h5 cb-margin-bottom-large">
-    Typography variants
+    Table
   </h2>
- 
-  <table class="cb-table cb-fixed cb-zebra">
+  <p>
+    Use the semantic <code class="cb-monospace cb-body2">&lt;table&gt;</code>, <code
+      class="cb-monospace cb-body2">&lt;thead&gt;</code>, <code class="cb-monospace cb-body2">&lt;tbody&gt;</code>,
+    <code class="cb-monospace cb-body2">&lt;tr&gt;</code>, <code class="cb-monospace cb-body2">&lt;th&gt;</code>, and
+    <code class="cb-monospace cb-body2">&lt;td&gt;</code> elements for DS tables.
+  </p>
+  <p>
+    On the <code class="cb-monospace cb-body2">&lt;table&gt;</code> element, apply the class <code
+      class="cb-monospace cb-body2">.cb-table</code>.
+  </p>
+
+  <p>
+    On the <code class="cb-monospace cb-body2">&lt;thead&gt;</code> element, apply the class <code
+      class="cb-monospace cb-body2">.cb-thead</code>.
+  </p>
+
+  <p>
+    On the <code class="cb-monospace cb-body2">&lt;tr&gt;</code> element, apply the class <code
+      class="cb-monospace cb-body2">.cb-tr</code>.
+  </p>
+
+  <p>
+    On the <code class="cb-monospace cb-body2">&lt;th&gt;</code> element, apply the class <code
+      class="cb-monospace cb-body2">.cb-th</code>.
+  </p>
+
+  <p>
+    On the <code class="cb-monospace cb-body2">&lt;td&gt;</code> element, apply the class <code
+      class="cb-monospace cb-body2">.cb-td</code>.
+  </p>
+
+  <table class="cb-table">
     <thead class="cb-thead">
       <tr class="cb-tr">
-        <th class="cb-th">Variant</th>
-        <th class="cb-th">class name</th>
-        <th class="cb-th">Description</th>
+        <th class="cb-th">Name</th>
+        <th class="cb-th">SSN</th>
+        <th class="cb-th">Status</th>
       </tr>
     </thead>
     <tbody class="cb-tbody">
       <tr class="cb-tr">
         <td class="cb-td">
-          <span class="cb-h1">h1</span>
+          Clancy Wiggum
         </td>
-        <td class="cb-td cb-monospace">.cb-h1</td>
-          <td class="cb-td">
-          <pre class="cb-body2 cb-monospace">font-size: 72px;
-font-weight: 300;
-line-height: 1.167;
-letter-spacing: 1px;</pre>
+        <td class="cb-td">
+          •••••1234
+        </td>
+        <td class="cb-td">
+          <div class="cb-chip cb-active">Active</div>
         </td>
       </tr>
       <tr class="cb-tr">
         <td class="cb-td">
-          <span class="cb-h2">h2</span>
+          Charles M. Burns
         </td>
-        <td class="cb-td cb-monospace">.cb-h2</td>
         <td class="cb-td">
-          <pre class="cb-body2 cb-monospace">font-size: 60px;
-font-weight: 900;
-line-height: 60px;
-letter-spacing: px;</pre>
+          •••••0001
         </td>
-      </tr>
-      <tr class="cb-tr">
         <td class="cb-td">
-          <span class="cb-h3">h3</span>
-        </td>
-        <td class="cb-td cb-monospace">.cb-h3</td>
-        <td class="cb-td">
-          <pre class="cb-body2 cb-monospace">font-size: 48px;
-font-weight: 400;
-line-height: 1.167;
-letter-spacing: 0px;</pre>
+          <div class="cb-chip">Pending</div>
         </td>
       </tr>
       <tr class="cb-tr">
         <td class="cb-td">
-          <span class="cb-h4">h4</span>
+          Arman Tanzarian
         </td>
-        <td class="cb-td cb-monospace">.cb-h4</td>
         <td class="cb-td">
-          foo bar
+          •••••5555
         </td>
-      </tr>
-      <tr class="cb-tr">
         <td class="cb-td">
-          <span class="cb-h5">h5</span>
-        </td>
-        <td class="cb-td cb-monospace">.cb-h5</td>
-        <td class="cb-td">
-          foo bar
+          <div class="cb-chip cb-alert">Disabled</div>
         </td>
       </tr>
       <tr class="cb-tr">
         <td class="cb-td">
-          <span class="cb-h6">h6</span>
+          Seymour Skinner
         </td>
-        <td class="cb-td cb-monospace">.cb-h6</td>
         <td class="cb-td">
-          foo bar
+          •••••5555
         </td>
-      </tr>
-      <tr class="cb-tr">
         <td class="cb-td">
-          <span class="cb-body3">body3</span>
-        </td>
-        <td class="cb-td cb-monospace">.cb-body3</td>
-        <td class="cb-td">
-          foo bar
-        </td>
-      </tr>
-      <tr class="cb-tr">
-        <td class="cb-td">
-          <span class="cb-body2">body2</span>
-        </td>
-        <td class="cb-td cb-monospace">.cb-body2</td>
-        <td class="cb-td">
-          foo bar
-        </td>
-      </tr>
-      <tr class="cb-tr">
-        <td class="cb-td">
-          <span class="cb-callout">callout</span>
-        </td>
-        <td class="cb-td cb-monospace">.cb-callout</td>
-        <td class="cb-td">
-          foo bar
-        </td>
-      </tr>
-      <tr class="cb-tr">
-        <td class="cb-td">
-          <span class="cb-body1">body1</span>
-        </td>
-        <td class="cb-td cb-monospace">.cb-body1</td>
-        <td class="cb-td">
-          foo bar
-        </td>
-      </tr>
-      <tr class="cb-tr">
-        <td class="cb-td">
-          <span class="cb-caption">caption</span>
-        </td>
-        <td class="cb-td cb-monospace">.cb-caption</td>
-        <td class="cb-td">
-          foo bar
+          <div class="cb-chip cb-active">Active</div>
         </td>
       </tr>
     </tbody>
   </table>
+
+  <h3 id="fixed-columns-zebra" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Table with fixed columns and zebra</h3>
+
+  <p>You can also add <code class="cb-monospace cb-body2">.cb-fixed</code> to the <code
+      class="cb-monospace cb-body2">&lt;table&gt;</code> element for a table fixed-width columns, and add <code
+      class="cb-monospace cb-body2">.cb-zebra</code> for zebra striping (i.e., alternating row background color).</p>
+
+  <p>Here's the same table from above, with those two classes added to the <code
+      class="cb-monospace cb-body2">&lt;table&gt;</code> element:</p>
+
+  <table class="cb-table cb-fixed cb-zebra">
+    <thead class="cb-thead">
+      <tr class="cb-tr">
+        <th class="cb-th">Name</th>
+        <th class="cb-th">SSN</th>
+        <th class="cb-th">Status</th>
+      </tr>
+    </thead>
+    <tbody class="cb-tbody">
+      <tr class="cb-tr">
+        <td class="cb-td">
+          Clancy Wiggum
+        </td>
+        <td class="cb-td">
+          •••••1234
+        </td>
+        <td class="cb-td">
+          <div class="cb-chip cb-active">Active</div>
+        </td>
+      </tr>
+      <tr class="cb-tr">
+        <td class="cb-td">
+          Charles M. Burns
+        </td>
+        <td class="cb-td">
+          •••••0001
+        </td>
+        <td class="cb-td">
+          <div class="cb-chip">Pending</div>
+        </td>
+      </tr>
+      <tr class="cb-tr">
+        <td class="cb-td">
+          Arman Tanzarian
+        </td>
+        <td class="cb-td">
+          •••••5555
+        </td>
+        <td class="cb-td">
+          <div class="cb-chip cb-alert">Disabled</div>
+        </td>
+      </tr>
+      <tr class="cb-tr">
+        <td class="cb-td">
+          Seymour Skinner
+        </td>
+        <td class="cb-td">
+          •••••5555
+        </td>
+        <td class="cb-td">
+          <div class="cb-chip cb-active">Active</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 id="cell-alignment" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Cell alignment</h3>
+
+  <p>The table below contains some <code class="cb-monospace cb-body2">&lt;th&gt;</code> and <code class="cb-monospace cb-body2">&lt;td&gt;</code> elements that are formatted for displaying numbers.</p>
+
+  <p>Add <code class="cb-monospace cb-body2">.cb-text-align-right</code> to a <code class="cb-monospace cb-body2">&lt;th&gt;</code> or <code class="cb-monospace cb-body2">&lt;td&gt;</code> to align is content to the right.</p>
+
+  <p>Add <code class="cb-monospace cb-body2">.cb-number</code> to a <code class="cb-monospace cb-body2">&lt;th&gt;</code> or <code class="cb-monospace cb-body2">&lt;td&gt;</code> to align is content to the right and format numbers to display in a tabular variant.</p>
+  
+  <p>Here, the <i>Age</i> and <i>Number of pets</i> columns are both formatted for numeric data.</p>
+
+  <table class="cb-table cb-fixed">
+    <thead class="cb-thead">
+      <tr class="cb-tr">
+        <th class="cb-th">Name</th>
+        <th class="cb-th cb-text-align-right">Age</th>
+        <th class="cb-th cb-text-align-right">Number of pets</th>
+        <th class="cb-th">Pet type(s)</th>
+      </tr>
+    </thead>
+    <tbody class="cb-tbody">
+      <tr class="cb-tr">
+        <td class="cb-td">
+          Clancy Wiggum
+        </td>
+        <td class="cb-td cb-number">
+          43
+        </td>
+        <td class="cb-td cb-number">
+          1
+        </td>
+        <td class="cb-td">Cat</td>
+      </tr>
+      <tr class="cb-tr">
+        <td class="cb-td">
+          Eleanor Abernathy
+        </td>
+        <td class="cb-td cb-number">
+          80
+        </td>
+        <td class="cb-td cb-number">
+          5,345
+        </td>
+        <td class="cb-td">Cat</td>
+      </tr>
+      <tr class="cb-tr">
+        <td class="cb-td">
+          Homer Simpson
+        </td>
+        <td class="cb-td cb-number">
+          40
+        </td>
+        <td class="cb-td cb-number">
+          2
+        </td>
+        <td class="cb-td">Cat, Dog</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
 </body>
+
 </html>

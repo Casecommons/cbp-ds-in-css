@@ -51,4 +51,11 @@
 .cb-th, .cb-td {
   padding: $cb-spacing-tiny $cb-spacing-dense $cb-spacing-tiny $cb-spacing-medium;
   border-bottom-width: 0;
+  &.cb-number {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+  &.cb-text-align-right {
+    text-align: right;
+  }
 }
