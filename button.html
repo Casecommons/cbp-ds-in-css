@@ -21,47 +21,134 @@
       variant.</p>
     <p>Make any button text-only by adding the class <code class="cb-monospace cb-body2">.cb-text-only</code></p>
     <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
-      <button class="cb-button">Standard button</button>
-      <button class="cb-button cb-text-only">Standard text-only button</button>
-      <button class="cb-button" disabled>Standard button, disabled</button>
-      <button class="cb-button cb-text-only" disabled>Standard button, disabled, text-only</button>
+      <button onclick="alert('Standard button');" class="cb-button">Standard button</button>
+      <button onclick="alert('Standard text-only button');" class="cb-button cb-text-only">Standard text-only
+        button</button>
+      <button onclick="alert('Standard button');" class="cb-button" disabled>Standard button, disabled</button>
+      <button onclick="alert('Standard text-only button');" class="cb-button cb-text-only" disabled>Standard button,
+        disabled, text-only</button>
     </div>
     <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
-      <button class="cb-button cb-compact">Standard button, compact</button>
-      <button class="cb-button cb-text-only cb-compact">Standard text-only button, compact</button>
-      <button class="cb-button cb-compact" disabled>Standard button, disabled, compact</button>
+      <button onclick="alert('Standard button, compact');" class="cb-button cb-compact">Standard button,
+        compact</button>
+      <button onclick="alert('Standard compact text-only button');" class="cb-button cb-text-only cb-compact">Standard
+        compact text-only button</button>
+      <button onclick="alert('Standard button, compact');" class="cb-button cb-compact" disabled>Standard button,
+        disabled, compact</button>
+      <button onclick="alert('Standard compact text-only button');" class="cb-button cb-text-only cb-compact"
+        disabled>Standard compact text-only button, disabled</button>
     </div>
+    <div
+      class="cb-code-block-container">
+      <pre
+        class="cb-caption cb-monospace fullwidth cb-no-margin">&lt;button onclick="alert('Standard button');" class="cb-button"&gt;Standard button&lt;/button&gt;
+&lt;button onclick="alert('Standard text-only button');" class="cb-button cb-text-only"&gt;Standard text-only button&lt;/button&gt;
+&lt;button onclick="alert('Standard button');" class="cb-button" disabled&gt;Standard button, disabled&lt;/button&gt;
+&lt;button onclick="alert('Standard text-only button');" class="cb-button cb-text-only" disabled&gt;Standard button, disabled, text-only&lt;/button&gt;
+&lt;button onclick="alert('Standard button, compact');" class="cb-button cb-compact"&gt;Standard button, compact&lt;/button&gt;
+&lt;button onclick="alert('Standard compact text-only button');" class="cb-button cb-text-only cb-compact"&gt;Standard compact text-only button&lt;/button&gt;
+&lt;button onclick="alert('Standard button, compact');" class="cb-button cb-compact" disabled&gt;Standard button, disabled, compact&lt;/button&gt;
+&lt;button onclick="alert('Standard compact text-only button');" class="cb-button cb-text-only cb-compact" disabled&gt;Standard compact text-only button, disabled&lt;/button&gt;</pre>
+    </div>
+
+    <h3 id="full-width" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Full width buttons</h3>
+
     <p>Make any button full-width by adding the class <code class="cb-monospace cb-body2">.cb-full-width</code></p>
     <div class="cb-margin-default-vertical flex flex-direction-column gap-default">
-      <button class="cb-button cb-full-width">Standard button, full width</button>
-      <button class="cb-button cb-full-width" disabled>Standard button, full width, disabled</button>
-      <button class="cb-button cb-full-width cb-compact">Standard button, compact, full width</button>
-      <button class="cb-button cb-full-width cb-compact" disabled>Standard button, compact, full width,
+      <button onclick="alert('Standard button, full width')" class="cb-button cb-full-width">Standard button, full
+        width</button>
+      <button onclick="alert('Standard button, full width')" class="cb-button cb-full-width" disabled>Standard button,
+        full width, disabled</button>
+      <button onclick="alert('Standard button, compact, full width')"
+        class="cb-button cb-full-width cb-compact">Standard button, compact, full width</button>
+      <button onclick="alert('Standard button, compact, full width')" class="cb-button cb-full-width cb-compact"
+        disabled>Standard button, compact, full width,
         disabled</button>
     </div>
-    <p>Make a button primary by adding the class <code class="cb-monospace cb-body2">.cb-primary</code></p>
-    <div class="margin-default-vertical flex gap-default flex-wrap-wrap">
-      <button class="cb-button cb-primary">Primary button</button>
-      <button class="cb-button cb-primary cb-text-only">Primary text-only button</button>
+    <div
+      class="cb-code-block-container">
+      <pre
+        class="cb-caption cb-monospace fullwidth cb-no-margin">&lt;button onclick="alert('Standard button, full width')" class="cb-button cb-full-width"&gt;Standard button, full width&lt;/button&gt;
+&lt;button onclick="alert('Standard button, full width')" class="cb-button cb-full-width" disabled&gt;Standard button, full width, disabled&lt;/button&gt;
+&lt;button onclick="alert('Standard button, compact, full width')" class="cb-button cb-full-width cb-compact"&gt;Standard button, compact, full width&lt;/button&gt;
+&lt;button onclick="alert('Standard button, compact, full width')" class="cb-button cb-full-width cb-compact" disabled&gt;Standard button, compact, full width, disabled&lt;/button&gt;</pre>
     </div>
-    <p>Make a button workflow by adding the class <code class="cb-monospace cb-body2">.cb-workflow</code></p>
-    <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
-      <button class="cb-button cb-workflow">Workflow (secondary) button</button>
-      <button class="cb-button cb-workflow cb-text-only">Workflow (secondary) text-only button</button>
+
+    <div id="variants">
+      <h3 class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Variants</h3>
+
+      <h4 id="primary" class="cb-callout cb-margin-bottom-large cb-margin-top-large">Primary</h4>
+
+      <p>Make a button primary by adding the class <code class="cb-monospace cb-body2">.cb-primary</code></p>
+      <div class="margin-default-vertical flex gap-default flex-wrap-wrap">
+        <button onclick="alert('Primary button')" class="cb-button cb-primary">Primary button</button>
+        <button onclick="alert('Primary text-only button')" class="cb-button cb-primary cb-text-only">Primary text-only
+          button</button>
+      </div>
+
+      <div
+        class="cb-code-block-container">
+        <pre
+          class="cb-caption cb-monospace fullwidth cb-no-margin">&lt;button onclick="alert('Primary button')" class="cb-button cb-primary"&gt;Primary button&lt;/button&gt;
+&lt;button onclick="alert('Primary text-only button')" class="cb-button cb-primary cb-text-only"&gt;Primary text-only button&lt;/button&gt;</pre>
+      </div>
+
+      <h4 id="workflow-secondary" class="cb-callout cb-margin-bottom-large cb-margin-top-large">Workflow</h4>
+
+      <p>Make a button workflow by adding the class <code class="cb-monospace cb-body2">.cb-workflow</code></p>
+      <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
+        <button onclick="alert('Workflow (secondary) button');" class="cb-button cb-workflow">Workflow (secondary)
+          button</button>
+        <button onclick="alert('Workflow (secondary) text-only button');"
+          class="cb-button cb-workflow cb-text-only">Workflow (secondary) text-only button</button>
+      </div>
+
+      <div
+        class="cb-code-block-container">
+        <pre
+          class="cb-caption cb-monospace fullwidth cb-no-margin">&lt;button onclick="alert('Workflow (secondary) button');" class="cb-button cb-workflow"&gt;Workflow (secondary) button&lt;/button&gt;
+&lt;button onclick="alert('Workflow (secondary) text-only button');" class="cb-button cb-workflow cb-text-only"&gt;Workflow (secondary) text-only button&lt;/button&gt;</pre>
+      </div>
+
+      <h4 id="destructive" class="cb-callout cb-margin-bottom-large cb-margin-top-large">Destructive</h4>
+
+      <p>Make a button destructive by adding the class <code class="cb-monospace cb-body2">.cb-destructive</code></p>
+      <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
+        <button onclick="alert('Destructive button');" class="cb-button cb-destructive">Destructive button</button>
+        <button onclick="alert('Destructive text-only button');"
+          class="cb-button cb-destructive cb-text-only">Destructive
+          text-only button</button>
+      </div>
+
+      <div
+        class="cb-code-block-container">
+        <pre
+          class="cb-caption cb-monospace fullwidth cb-no-margin">&lt;button onclick="alert('Destructive button');" class="cb-button cb-destructive"&gt;Destructive button&lt;/button&gt;
+&lt;button onclick="alert('Destructive text-only button');" class="cb-button cb-destructive cb-text-only"&gt;Destructive text-only button&lt;/button&gt;</pre>
+      </div>
+
     </div>
-    <p>Make a button destructive by adding the class <code class="cb-monospace cb-body2">.cb-destructive</code></p>
-    <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
-      <button class="cb-button cb-destructive">Destructive button</button>
-      <button class="cb-button cb-destructive cb-text-only">Destructive text-only button</button>
-    </div>
+
+    <h3 id="links" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Links styled as buttons</h3>
+
+
     <p>in the examples above, an HTML <code class="cb-monospace cb-body2">&lt;button></code> element was used, but the
       class <code class="cb-monospace cb-body2">.cb-button</code> can also be applied to other elements. Here's an HTML
-      <code class="cb-monospace cb-body2">&lt;a></code> element styled like a Casebook button:</p>
+      <code class="cb-monospace cb-body2">&lt;a></code> element styled like a Casebook button:
+    </p>
     <div class="cb-margin-default-vertical">
-      <a class="cb-button cb-primary" href="#bar">
+      <a id="link-button" class="cb-button cb-primary" href="#link-button">
         Link styled like a button
       </a>
     </div>
+
+    <div
+      class="cb-code-block-container">
+      <pre>&lt;a id="link-button" class="cb-button cb-primary" href="#link-button"&gt;
+  Link styled like a button
+&lt;/a&gt;</pre>
+    </div>
+
   </main>
 </body>
 

@@ -20,7 +20,8 @@
       This defaults to the small size, but size can be set explicitly by adding one of: <code
         class="cb-monospace cb-body2">.cb-extra-small</code>, <code class="cb-monospace cb-body2">.cb-small</code>,
       <code class="cb-monospace cb-body2">.cb-medium</code>, <code class="cb-monospace cb-body2">.cb-large</code>, or
-      <code class="cb-monospace cb-body2">.cb-extra-large</code></p>
+      <code class="cb-monospace cb-body2">.cb-extra-large</code>
+    </p>
     <div class="flex gap-default flex-wrap-wrap">
       <div class="cb-avatar cb-extra-small cb-background-color-patina-100">
         XS
@@ -38,24 +39,46 @@
         XL
       </div>
     </div>
-    <p>The examples above are HTML <code class="cb-monospace cb-body2">&lt;div></code> elements, but this can also be
-      used on HTML <code class="cb-monospace cb-body2">&lt;button></code>s:</p>
+
+    <div
+      class="cb-code-block-container">
+      <pre>&lt;div class="cb-avatar cb-extra-small cb-background-color-patina-100"&gt;XS&lt;/div&gt;
+&lt;div class="cb-avatar cb-small cb-background-color-heather-50"&gt;SM&lt;/div&gt;
+&lt;div class="cb-avatar cb-medium cb-background-color-framboise-25"&gt;MD&lt;/div&gt;
+&lt;div class="cb-avatar cb-large cb-background-color-millennial-100"&gt;LG&lt;/div&gt;
+&lt;div class="cb-avatar cb-extra-large cb-background-color-ocean-100"&gt;XL&lt;/div&gt;</pre>
+    </div>
+
+    <h3 id="avatar-buttons" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Avatar buttons</h3>
+
+    <p>The examples above are HTML <code class="cb-monospace cb-body2">&lt;div></code> elements, but HTML <code
+        class="cb-monospace cb-body2">&lt;button></code>s can also be rendered as Avatars:</p>
     <div class="flex gap-default flex-wrap-wrap">
-      <button class="cb-avatar cb-extra-small cb-background-color-patina-100" onclick="alert('you clicked me');">
+      <button class="cb-avatar cb-extra-small cb-background-color-patina-100" onclick="alert('you clicked XS');">
         XS
       </button>
-      <button class="cb-avatar cb-small cb-background-color-heather-50" onclick="alert('you clicked me');">
+      <button class="cb-avatar cb-small cb-background-color-heather-50" onclick="alert('you clicked SM');">
         SM
       </button>
-      <button class="cb-avatar cb-medium cb-background-color-framboise-25" onclick="alert('you clicked me');">
+      <button class="cb-avatar cb-medium cb-background-color-framboise-25" onclick="alert('you clicked MD');">
         MD
       </button>
-      <button class="cb-avatar cb-large cb-background-color-millennial-100" onclick="alert('you clicked me');">
+      <button class="cb-avatar cb-large cb-background-color-millennial-100" onclick="alert('you clicked LG');">
         LG
       </button>
-      <button class="cb-avatar cb-extra-large cb-background-color-ocean-100" onclick="alert('you clicked me');">
+      <button class="cb-avatar cb-extra-large cb-background-color-ocean-100" onclick="alert('you clicked XL');">
         XL
       </button>
+    </div>
+
+    <div
+      class="cb-code-block-container">
+      <pre
+        class="cb-caption cb-monospace fullwidth cb-no-margin">&lt;button class="cb-avatar cb-extra-small cb-background-color-patina-100" onclick="alert('you clicked XS');"&gt;XS&lt;/button&gt;
+&lt;button class="cb-avatar cb-small cb-background-color-heather-50" onclick="alert('you clicked SM');"&gt;SM&lt;/button&gt;
+&lt;button class="cb-avatar cb-medium cb-background-color-framboise-25" onclick="alert('you clicked MD');"&gt;MD&lt;/button&gt;
+&lt;button class="cb-avatar cb-large cb-background-color-millennial-100" onclick="alert('you clicked LG');"&gt;LG&lt;/button&gt;
+&lt;button class="cb-avatar cb-extra-large cb-background-color-ocean-100" onclick="alert('you clicked XL');"&gt;XL&lt;/button&gt;</pre>
     </div>
   </main>
 </body>

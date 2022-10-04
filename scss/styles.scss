@@ -36,3 +36,18 @@
   cursor: not-allowed !important;
 }
 
+.cb-code-block-container {
+  @extend.cb-background-color-stratus-100;
+  @extend.overflow-x-auto;
+  @extend.cb-border-radius-big;
+  @extend.cb-pad-default;
+  @extend.cb-margin-bottom-large;
+  @extend.cb-margin-top-large;
+
+  & pre {
+    @extend.cb-caption;
+    @extend.cb-monospace;
+    @extend.cb-full-width;
+    @extend.cb-no-margin;
+  }
+}

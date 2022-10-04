@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] Link page improvement (explain classes)
 - [ ] Table page
 - [ ] TextField
 - [ ] AppBar

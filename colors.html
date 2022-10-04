@@ -27,7 +27,7 @@
       const tones = [25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900].sort((a, b) => b - a);
       function App(props) {
         return html`<div class="flex flex-direction-column justify-content-stretch">${colors.map(c =>
-          html`<div class="flex flex-wrap-wrap flex-direction-row flex-grow">${tones.map(t => html`<div class="cb-pad-dense column-4 column-6-sm column-12-xs"><div class="cb-border-color-${c}-${t} cb-border-width-default cb-border-style-solid cb-border-radius-big overflow-hidden"><div class="cb-background-color-white cb-border-radius-big cb-pad-dense">${c} ${t}<br/><code class="cb-monospace cb-caption cb-text-color-secondary">.cb-color-${c}-${t}</code><br/><code class="cb-monospace cb-caption cb-text-color-secondary">.cb-background-color-${c}-${t}</code></div><div class="cb-background-color-${c}-${t} cb-pad-large"></div></div></div>`)
+          html`<h3 id="${c}" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">${c[0].toUpperCase()}${c.substring(1)}</h3><div class="flex flex-wrap-wrap flex-direction-row flex-grow">${tones.map(t => html`<div class="cb-pad-dense column-4 column-6-sm column-12-xs"><div class="cb-border-color-${c}-${t} cb-border-width-default cb-border-style-solid cb-border-radius-big overflow-hidden"><div class="cb-background-color-white cb-border-radius-big cb-pad-dense">${c} ${t}<br/><code class="cb-monospace cb-caption cb-text-color-secondary">.cb-color-${c}-${t}</code><br/><code class="cb-monospace cb-caption cb-text-color-secondary">.cb-background-color-${c}-${t}</code></div><div class="cb-background-color-${c}-${t} cb-pad-large"></div></div></div>`)
             }</div>`
         )}</div>`
       }
