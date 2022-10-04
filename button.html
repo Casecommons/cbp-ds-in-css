@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,60 @@
   <title>DS in CSS - Button</title>
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
+
 <body class="baseline">
-  <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
-  <h2 class="cb-h5 cb-margin-bottom-large">
-    Buttons
-  </h2>
-  <p>You can style a button like a Casebook button with the class <code class="cb-monospace cb-body2">.cb-button</code>. By default this will be styled like the standard button variant.</p>
-  <p>Make any button text-only by adding the class <code class="cb-monospace cb-body2">.cb-text-only</code></p>
-  <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
-    <button class="cb-button">Standard button</button>
-    <button class="cb-button cb-text-only">Standard text-only button</button>
-    <button class="cb-button" disabled>Standard button, disabled</button>
-    <button class="cb-button cb-text-only" disabled>Standard button, disabled, text-only</button>
-  </div>
-  <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
-    <button class="cb-button cb-compact">Standard button, compact</button>
-    <button class="cb-button cb-text-only cb-compact">Standard text-only button, compact</button>
-    <button class="cb-button cb-compact" disabled>Standard button, disabled, compact</button>
-  </div>
-  <p>Make any button full-width by adding the class <code class="cb-monospace cb-body2">.cb-full-width</code></p>
-  <div class="cb-margin-default-vertical flex flex-direction-column gap-default">
-    <button class="cb-button cb-full-width">Standard button, full width</button>
-    <button class="cb-button cb-full-width" disabled>Standard button, full width, disabled</button>
-    <button class="cb-button cb-full-width cb-compact">Standard button, compact, full width</button>
-    <button class="cb-button cb-full-width cb-compact" disabled>Standard button, compact, full width, disabled</button>
-  </div>
-  <p>Make a button primary by adding the class <code class="cb-monospace cb-body2">.cb-primary</code></p>
-  <div class="margin-default-vertical flex gap-default flex-wrap-wrap">
-    <button class="cb-button cb-primary">Primary button</button>
-    <button class="cb-button cb-primary cb-text-only">Primary text-only button</button>
-  </div>
-  <p>Make a button workflow by adding the class <code class="cb-monospace cb-body2">.cb-workflow</code></p>
-  <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
-    <button class="cb-button cb-workflow">Workflow (secondary) button</button>
-    <button class="cb-button cb-workflow cb-text-only">Workflow (secondary) text-only button</button>
-  </div>
-  <p>Make a button destructive by adding the class <code class="cb-monospace cb-body2">.cb-destructive</code></p>
-  <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
-    <button class="cb-button cb-destructive">Destructive button</button>
-    <button class="cb-button cb-destructive cb-text-only">Destructive text-only button</button>
-  </div>
-  <p>in the examples above, an HTML <code class="cb-monospace cb-body2">&lt;button></code> element was used, but the class <code class="cb-monospace cb-body2">.cb-button</code> can also be applied to other elements. Here's an HTML <code class="cb-monospace cb-body2">&lt;a></code> element styled like a Casebook button:</p>
-  <div class="cb-margin-default-vertical">
-    <a class="cb-button cb-primary" href="#bar">
-      Link styled like a button
-    </a>
-  </div>
+  <main class="cb-main">
+    <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
+    <h2 class="cb-h5 cb-margin-bottom-large">
+      Buttons
+    </h2>
+    <p>You can style a button like a Casebook button with the class <code
+        class="cb-monospace cb-body2">.cb-button</code>. By default this will be styled like the standard button
+      variant.</p>
+    <p>Make any button text-only by adding the class <code class="cb-monospace cb-body2">.cb-text-only</code></p>
+    <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
+      <button class="cb-button">Standard button</button>
+      <button class="cb-button cb-text-only">Standard text-only button</button>
+      <button class="cb-button" disabled>Standard button, disabled</button>
+      <button class="cb-button cb-text-only" disabled>Standard button, disabled, text-only</button>
+    </div>
+    <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
+      <button class="cb-button cb-compact">Standard button, compact</button>
+      <button class="cb-button cb-text-only cb-compact">Standard text-only button, compact</button>
+      <button class="cb-button cb-compact" disabled>Standard button, disabled, compact</button>
+    </div>
+    <p>Make any button full-width by adding the class <code class="cb-monospace cb-body2">.cb-full-width</code></p>
+    <div class="cb-margin-default-vertical flex flex-direction-column gap-default">
+      <button class="cb-button cb-full-width">Standard button, full width</button>
+      <button class="cb-button cb-full-width" disabled>Standard button, full width, disabled</button>
+      <button class="cb-button cb-full-width cb-compact">Standard button, compact, full width</button>
+      <button class="cb-button cb-full-width cb-compact" disabled>Standard button, compact, full width,
+        disabled</button>
+    </div>
+    <p>Make a button primary by adding the class <code class="cb-monospace cb-body2">.cb-primary</code></p>
+    <div class="margin-default-vertical flex gap-default flex-wrap-wrap">
+      <button class="cb-button cb-primary">Primary button</button>
+      <button class="cb-button cb-primary cb-text-only">Primary text-only button</button>
+    </div>
+    <p>Make a button workflow by adding the class <code class="cb-monospace cb-body2">.cb-workflow</code></p>
+    <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
+      <button class="cb-button cb-workflow">Workflow (secondary) button</button>
+      <button class="cb-button cb-workflow cb-text-only">Workflow (secondary) text-only button</button>
+    </div>
+    <p>Make a button destructive by adding the class <code class="cb-monospace cb-body2">.cb-destructive</code></p>
+    <div class="cb-margin-default-vertical flex gap-default flex-wrap-wrap">
+      <button class="cb-button cb-destructive">Destructive button</button>
+      <button class="cb-button cb-destructive cb-text-only">Destructive text-only button</button>
+    </div>
+    <p>in the examples above, an HTML <code class="cb-monospace cb-body2">&lt;button></code> element was used, but the
+      class <code class="cb-monospace cb-body2">.cb-button</code> can also be applied to other elements. Here's an HTML
+      <code class="cb-monospace cb-body2">&lt;a></code> element styled like a Casebook button:</p>
+    <div class="cb-margin-default-vertical">
+      <a class="cb-button cb-primary" href="#bar">
+        Link styled like a button
+      </a>
+    </div>
+  </main>
 </body>
+
 </html>

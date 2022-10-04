@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,46 +8,55 @@
   <title>DS in CSS - Avatar</title>
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
+
 <body class="baseline">
-  <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
-  <h2 class="cb-h5 cb-margin-bottom-large">
-    Avatars
-  </h2>
-  <p>Style an element like a Casebook avatar with the class <code class="cb-monospace cb-body2">.cb-avatar</code>. This defaults to the small size, but size can be set explicitly by adding one of: <code class="cb-monospace cb-body2">.cb-extra-small</code>, <code class="cb-monospace cb-body2">.cb-small</code>, <code class="cb-monospace cb-body2">.cb-medium</code>, <code class="cb-monospace cb-body2">.cb-large</code>, or <code class="cb-monospace cb-body2">.cb-extra-large</code></p>
-  <div class="flex gap-default flex-wrap-wrap">
-    <div class="cb-avatar cb-extra-small cb-background-color-patina-100">
-      XS
+  <main class="cb-main">
+    <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
+    <h2 class="cb-h5 cb-margin-bottom-large">
+      Avatars
+    </h2>
+    <p>Style an element like a Casebook avatar with the class <code class="cb-monospace cb-body2">.cb-avatar</code>.
+      This defaults to the small size, but size can be set explicitly by adding one of: <code
+        class="cb-monospace cb-body2">.cb-extra-small</code>, <code class="cb-monospace cb-body2">.cb-small</code>,
+      <code class="cb-monospace cb-body2">.cb-medium</code>, <code class="cb-monospace cb-body2">.cb-large</code>, or
+      <code class="cb-monospace cb-body2">.cb-extra-large</code></p>
+    <div class="flex gap-default flex-wrap-wrap">
+      <div class="cb-avatar cb-extra-small cb-background-color-patina-100">
+        XS
+      </div>
+      <div class="cb-avatar cb-small cb-background-color-heather-50">
+        SM
+      </div>
+      <div class="cb-avatar cb-medium cb-background-color-framboise-25">
+        MD
+      </div>
+      <div class="cb-avatar cb-large cb-background-color-millennial-100">
+        LG
+      </div>
+      <div class="cb-avatar cb-extra-large cb-background-color-ocean-100">
+        XL
+      </div>
     </div>
-    <div class="cb-avatar cb-small cb-background-color-heather-50">
-      SM
+    <p>The examples above are HTML <code class="cb-monospace cb-body2">&lt;div></code> elements, but this can also be
+      used on HTML <code class="cb-monospace cb-body2">&lt;button></code>s:</p>
+    <div class="flex gap-default flex-wrap-wrap">
+      <button class="cb-avatar cb-extra-small cb-background-color-patina-100" onclick="alert('you clicked me');">
+        XS
+      </button>
+      <button class="cb-avatar cb-small cb-background-color-heather-50" onclick="alert('you clicked me');">
+        SM
+      </button>
+      <button class="cb-avatar cb-medium cb-background-color-framboise-25" onclick="alert('you clicked me');">
+        MD
+      </button>
+      <button class="cb-avatar cb-large cb-background-color-millennial-100" onclick="alert('you clicked me');">
+        LG
+      </button>
+      <button class="cb-avatar cb-extra-large cb-background-color-ocean-100" onclick="alert('you clicked me');">
+        XL
+      </button>
     </div>
-    <div class="cb-avatar cb-medium cb-background-color-framboise-25">
-      MD
-    </div>
-    <div class="cb-avatar cb-large cb-background-color-millennial-100">
-      LG
-    </div>
-    <div class="cb-avatar cb-extra-large cb-background-color-ocean-100">
-      XL
-    </div>
-  </div>
-  <p>The examples above are HTML <code class="cb-monospace cb-body2">&lt;div></code> elements, but this can also be used on HTML <code class="cb-monospace cb-body2">&lt;button></code>s:</p>
-  <div class="flex gap-default flex-wrap-wrap">
-    <button class="cb-avatar cb-extra-small cb-background-color-patina-100" onclick="alert('you clicked me');">
-      XS
-    </button>
-    <button class="cb-avatar cb-small cb-background-color-heather-50" onclick="alert('you clicked me');">
-      SM
-    </button>
-    <button class="cb-avatar cb-medium cb-background-color-framboise-25" onclick="alert('you clicked me');">
-      MD
-    </button>
-    <button class="cb-avatar cb-large cb-background-color-millennial-100" onclick="alert('you clicked me');">
-      LG
-    </button>
-    <button class="cb-avatar cb-extra-large cb-background-color-ocean-100" onclick="alert('you clicked me');">
-      XL
-    </button>
-  </div>
+  </main>
 </body>
+
 </html>
