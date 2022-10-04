@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,32 @@
   <title>DS in CSS - Colors</title>
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
-<body class="baseline">
-  <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
-  <h2 class="cb-h5 cb-margin-bottom-large">
-    Colors
-  </h2>
 
-  <div id="root"></div>
-  <script type="module">
-    import { h, Component, render } from "https://unpkg.com/preact?module";
-    import htm from "https://unpkg.com/htm?module";
-    const html = htm.bind(h);
-  
-    const colors = ["framboise", "heather", "indigo", "matter", "millennial", "nightshade", "patina", "stratus"].sort();
-    const tones = [25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900].sort((a, b) => b-a);
-    function App (props) {
-      return html`<div class="flex flex-direction-column justify-content-stretch">${colors.map(c => 
-        html`<div class="flex flex-wrap-wrap flex-direction-row flex-grow">${
-          tones.map(t => html`<div class="cb-pad-dense column-4"><div class="cb-border-color-${c}-${t} cb-border-width-default cb-border-style-solid cb-border-radius-big overflow-hidden"><div class="cb-background-color-white cb-border-radius-big cb-pad-dense">${c} ${t}<br/><code class="cb-monospace cb-caption cb-text-color-secondary">.cb-color-${c}-${t}</code><br/><code class="cb-monospace cb-caption cb-text-color-secondary">.cb-background-color-${c}-${t}</code></div><div class="cb-background-color-${c}-${t} cb-pad-large"></div></div></div>`)
-        }</div>`
-      )}</div>`
-    }
-  
-    render(html`<${App} name="World" />`, document.getElementById("root"));
-  </script>
+<body class="baseline">
+  <main class="cb-main">
+    <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
+    <h2 class="cb-h5 cb-margin-bottom-large">
+      Colors
+    </h2>
+
+    <div id="root"></div>
+    <script type="module">
+      import { h, Component, render } from "https://unpkg.com/preact?module";
+      import htm from "https://unpkg.com/htm?module";
+      const html = htm.bind(h);
+
+      const colors = ["framboise", "heather", "indigo", "matter", "millennial", "nightshade", "patina", "stratus"].sort();
+      const tones = [25, 50, 100, 200, 300, 400, 500, 600, 700, 800, 900].sort((a, b) => b - a);
+      function App(props) {
+        return html`<div class="flex flex-direction-column justify-content-stretch">${colors.map(c =>
+          html`<div class="flex flex-wrap-wrap flex-direction-row flex-grow">${tones.map(t => html`<div class="cb-pad-dense column-4 column-6-sm column-12-xs"><div class="cb-border-color-${c}-${t} cb-border-width-default cb-border-style-solid cb-border-radius-big overflow-hidden"><div class="cb-background-color-white cb-border-radius-big cb-pad-dense">${c} ${t}<br/><code class="cb-monospace cb-caption cb-text-color-secondary">.cb-color-${c}-${t}</code><br/><code class="cb-monospace cb-caption cb-text-color-secondary">.cb-background-color-${c}-${t}</code></div><div class="cb-background-color-${c}-${t} cb-pad-large"></div></div></div>`)
+            }</div>`
+        )}</div>`
+      }
+
+      render(html`<${App} name="World" />`, document.getElementById("root"));
+    </script>
+  </main>
 </body>
+
 </html>
