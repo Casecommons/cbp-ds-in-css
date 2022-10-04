@@ -18,3 +18,5 @@
 - [ ] ToolTip
 - [ ] Truncate
 - [ ] Layout stuff
+- [x] Layout breakpoints
+- [x] Color page responsiveness
