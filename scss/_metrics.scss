@@ -5,6 +5,7 @@
 $cb-unit: 8px;
 
 /* spacing */
+$cb-spacing-none: 0px !important;
 $cb-spacing-tiny: calc($cb-unit / 2);
 $cb-spacing-dense: $cb-unit;
 $cb-spacing-default: calc($cb-unit * 2);
@@ -85,6 +86,7 @@ $corners: top-left, top-right, bottom-left, bottom-right;
 
 $sides: top, right, bottom, left;
 $sizes: (
+  none: $cb-spacing-none,
   tiny: $cb-spacing-tiny,
   dense: $cb-spacing-dense,
   default: $cb-spacing-default,

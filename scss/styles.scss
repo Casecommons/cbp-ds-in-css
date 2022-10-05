@@ -11,6 +11,7 @@
 @import "table";
 @import "avatar";
 @import "page";
+@import "expandable-section";
 
 /* 
 * GLOBAL
@@ -50,4 +51,12 @@
     @extend.cb-full-width;
     @extend.cb-no-margin;
   }
+}
+
+.cb-inline-code {
+  @extend.cb-monospace;
+  @extend.cb-body2;
+  @extend.cb-background-color-stratus-100;
+  @extend.cb-pad-tiny;
+  @extend.cb-border-radius-default;
 }

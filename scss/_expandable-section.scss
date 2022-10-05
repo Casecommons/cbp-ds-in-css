@@ -1,0 +1,32 @@
+$expandable-box-shadow-color: rgb(3 13 32 / 7%);
+
+.cb-expandable {
+  box-shadow: 0 0 0 1px $expandable-box-shadow-color;
+  @extend.cb-border-radius-huge;
+  @extend.cb-full-width;
+
+  transition: 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+
+  summary {
+
+    @extend.cb-pad-default;
+    @extend.cb-full-width;
+    position: relative;
+    cursor: pointer;
+
+    &::marker {
+      content: "";
+    }
+    &::after {
+      // this could actually be like content: url(/path/to/some/icon.svg);
+      content: "▼ ";
+      position: absolute;
+      right: $cb-unit;
+      color: $cb-color-matter-200;
+    }
+  }
+
+  &[open] summary::after {
+    content: "▲ ";
+  }
+}
