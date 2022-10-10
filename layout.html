@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DS in CSS - Layouts</title>
+  <link rel="shortcut icon" href="https://cdn.casebook.net/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body class="cb-baseline">
+  <main class="cb-main">
+    <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
+    <h2 class="cb-h5 cb-margin-bottom-large">
+      Layouts
+    </h2>
+    <p>There are several convenience classes provided in this CSS library for creating layouts.</p>
+
+    <h3 id="flex" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Flex classes</h3>
+
+    <p>
+      Several classes are provided to apply flex styles.
+    </p>
+    <table class="cb-table cb-margin-bottom-large">
+      <thead class="cb-thead">
+        <tr class="cb-tr">
+          <th class="cb-th">Class name</th>
+          <th class="cb-th">Effect</th>
+        </tr>
+      </thead>
+      <tbody class="cb-tbody">
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">display: flex;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-grow</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-grow: 1;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-shrink</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-shrink: 1;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-direction-row</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-direction: row;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-direction-column</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-direction: column;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-direction-row-reverse</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-direction: row-reverse;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-direction-column-reverse</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-direction: column-reverse;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-wrap-wrap</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-wrap: wrap;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-wrap-nowrap</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-wrap: nowrap;</code>
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">.cb-flex-wrap-wrap-reverse</code>
+          </td>
+          <td class="cb-td">
+            Adds <code class="cb-inline-code">flex-wrap: wrap-reverse;</code>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 id="columns" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Columns</h3>
+
+    <p>
+      This library uses a basic 12-column layout.
+    </p>
+
+    <p>
+      You can use classes like <code class="cb-inline-code">.cb-column-{number}</code> (where number is an integer in the
+      range 1..12) to specify a number of columns an element should occupy.
+    </p>
+
+    <div class="cb-flex cb-flex-wrap-wrap">
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-1">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          1 column
+        </div>
+      </div>
+
+      <div class="cb-pad-dense cb-column-2">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          2 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-2">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          2 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-2">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          2 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-2">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          2 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-2">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          2 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-2">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          2 columns
+        </div>
+      </div>
+
+      <div class="cb-pad-dense cb-column-3">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          3 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-3">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          3 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-3">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          3 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-3">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          3 columns
+        </div>
+      </div>
+
+      <div class="cb-pad-dense cb-column-4">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          4 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-4">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          4 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-4">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          4 columns
+        </div>
+      </div>
+
+      <div class="cb-pad-dense cb-column-6">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          6 columns
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-6">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          6 columns
+        </div>
+      </div>
+
+      <div class="cb-pad-dense cb-column-12">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          12 columns
+        </div>
+      </div>
+    </div>
+
+    <h3 id="responsive-columns" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Responsive columns</h3>
+
+    <p>
+      Fixed columns are useful, but limited; for instance, resize your browser and look at the example above. those 1,
+      2, and 3 column boxes are pretty cramped in a narrow viewport.
+    </p>
+    <p>
+      You can use classes like <code class="cb-inline-code">.cb-column-{number}-{breakpoint}</code> to specify a number of
+      columns for a specific breakpoint size range.
+    </p>
+
+    <table class="cb-table cb-fixed cb-margin-bottom-large">
+      <thead class="cb-thead">
+        <tr class="cb-tr">
+          <th class="cb-th">Breakpoint</th>
+          <th class="cb-th">Viewport width (<em>w</em>)</th>
+        </tr>
+      </thead>
+      <tbody class="cb-tbody">
+
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">xs</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &le; 600px
+          </td>
+        </tr>
+
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">sm</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &le; 960px
+          </td>
+        </tr>
+
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">md</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &le; 1280px
+          </td>
+        </tr>
+
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">lg</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &le; 1600px
+          </td>
+        </tr>
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">xl</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &ge; 1601px
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p>
+      Note that <code class="cb-inline-code">xl</code> is the only breakpoint above that specifies viewports
+      <em>wider</em> than a given pixel value; otherwise, all of the normal <code
+        class="cb-inline-code">.cb-column-{number}-{breakpoint}</code> classes specify column values for viewports
+      <em>narrower</em> than a specific value.
+
+    </p>
+    <p>To target viewport widths wider than a specific breakpoint, you can use a class like <code
+        class="cb-inline-code">.cb-column-{number}-{breakpoint}-up</code> to specify a
+      number of columns.
+    </p>
+
+    <table class="cb-table cb-fixed cb-margin-bottom-large">
+      <thead class="cb-thead">
+        <tr class="cb-tr">
+          <th class="cb-th">Breakpoint</th>
+          <th class="cb-th">Viewport width (<em>w</em>)</th>
+        </tr>
+      </thead>
+      <tbody class="cb-tbody">
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">xs-up</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &ge; 0px
+          </td>
+        </tr>
+
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">sm-up</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &ge; 600px
+          </td>
+        </tr>
+
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">md-up</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &ge; 960px
+          </td>
+        </tr>
+
+        <tr class="cb-tr">
+          <td class="cb-td">
+            <code class="cb-inline-code">lg-up</code>
+          </td>
+          <td class="cb-td">
+            <em>w</em> &ge; 1280px
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p>
+      In the example below, each tile will take up 12 columns in the xs breakpoint, 6 columns in the sm breakpoint, 4
+      columns in the md breakpoint, 3 columns in the lg breakpoint, and 2 columns in the xl breakpoint.
+    </p>
+
+    <div class="cb-flex cb-flex-wrap-wrap">
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 1
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 2
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 3
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 4
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 5
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 6
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 7
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 8
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 9
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 10
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 11
+        </div>
+      </div>
+      <div class="cb-pad-dense cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg cb-column-2-xl">
+        <div class="cb-background-color-heather-25 cb-pad-dense cb-border-radius-big">
+          Tile 12
+        </div>
+      </div>
+    </div>
+
+    <div class="cb-code-block-container">
+      <pre></pre>
+    </div>
+  </main>
+</body>
+
+</html>

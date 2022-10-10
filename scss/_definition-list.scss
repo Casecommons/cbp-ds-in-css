@@ -1,0 +1,26 @@
+dl.cb-definition-list {
+  @extend.cb-no-margin;
+
+  dd, dt {
+    @extend.cb-no-margin;
+    @extend.cb-pad-right-medium;
+  box-sizing: border-box;
+}
+
+  dt {
+    @extend.cb-body2;
+    @extend.cb-text-color-secondary;
+    @extend.cb-pad-top-dense;
+
+  }
+
+  dd {
+    @extend.cb-body3;
+    @extend.cb-pad-bottom-dense;
+  }
+  &.unpadded {
+    dd, dt {
+      padding: 0;
+    }
+  }
+}

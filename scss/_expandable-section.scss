@@ -11,22 +11,28 @@ $expandable-box-shadow-color: rgb(3 13 32 / 7%);
 
     @extend.cb-pad-default;
     @extend.cb-full-width;
+    @extend.cb-border-radius-huge;
     position: relative;
     cursor: pointer;
 
     &::marker {
       content: "";
     }
+
     &::after {
-      // this could actually be like content: url(/path/to/some/icon.svg);
-      content: "▼ ";
+      content: url(../icons/angle-down.svg);
       position: absolute;
-      right: $cb-unit;
+      right: $cb-unit * 1.5;
+      padding: 0 $cb-unit * 1.5;
+      width: 0.875em;
+      font-size: 0.75em;
       color: $cb-color-matter-200;
+      opacity: 0.8;
     }
   }
 
   &[open] summary::after {
-    content: "▲ ";
+    transform: rotate(180deg);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
 }

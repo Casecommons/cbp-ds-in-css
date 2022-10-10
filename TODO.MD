@@ -1,23 +1,25 @@
 # TODO
 
-- [ ] Link page improvement (explain classes)
-- [ ] Table page
-- [ ] TextField
 - [ ] AppBar
 - [ ] Badge
 - [ ] Dialog
 - [ ] Divider
-- [ ] ExpandableSection
+- [ ] Layout stuff
 - [ ] List
 - [ ] LoadingIndicator
 - [ ] Menu
+- [ ] Metrics
 - [ ] Page
 - [ ] Popover
 - [ ] ProgressMeter
 - [ ] SnackBar
+- [ ] Table page code examples
 - [ ] Tag
+- [ ] TextField
 - [ ] ToolTip
 - [ ] Truncate
-- [ ] Layout stuff
+- [x] Link page improvement (explain classes)
+- [x] Definition list
+- [x] ExpandableSection
 - [x] Layout breakpoints
 - [x] Color page responsiveness

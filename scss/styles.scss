@@ -12,34 +12,31 @@
 @import "avatar";
 @import "page";
 @import "expandable-section";
+@import "definition-list";
 
 /* 
 * GLOBAL
 */
 
-.baseline * {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-}
-
-.baseline {
+.cb-baseline {
   background: $cb-color-white;
   color: $cb-color-text-primary;
   font-family: $cb-font;
   font-size: $cb-font-size;
   font-weight: 400;
-}
-
-/* Interactability */
-
-*:disabled {
-  opacity: 0.33;
-  cursor: not-allowed !important;
+  & * {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  }
+  & *:disabled {
+    opacity: 0.33;
+    cursor: not-allowed !important;
+  }
 }
 
 .cb-code-block-container {
   @extend.cb-background-color-stratus-100;
-  @extend.overflow-x-auto;
+  @extend.cb-overflow-x-auto;
   @extend.cb-border-radius-big;
   @extend.cb-pad-default;
   @extend.cb-margin-bottom-large;

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DS in CSS - Definition lists</title>
+  <link rel="shortcut icon" href="https://cdn.casebook.net/images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+
+<body class="cb-baseline">
+  <main class="cb-main">
+    <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
+    <h2 class="cb-h5 cb-margin-bottom-large">
+      Definition lists
+    </h2>
+    <p>
+      Use the <code class="cb-inline-code">&lt;dl&gt;</code>, <code class="cb-inline-code">&lt;dt&gt;</code> and <code class="cb-inline-code">&lt;dd&gt;</code> tags to create a definition list. Add the class <code class="cb-inline-code">.cb-definition-list</code> to the <code class="cb-inline-code">&lt;dl&gt;</code> tag.
+    </p>
+    <p>
+      In the example below, <code class="cb-inline-code">.cb-definition-list</code> is combined with <a class="cb-link" href="./layout.html">layout-related column classes</a> (<code class="cb-inline-code">.cb-column-12-xs</code>, <code class="cb-inline-code">.cb-column-6-sm</code>, <code class="cb-inline-code">.cb-column-4-md</code> and <code class="cb-inline-code">.cb-column-3-lg-up</code>) to achieve a flexible responsive layout.
+    </p>
+    <div class="cb-flex cb-flex-wrap-wrap">
+      <dl class="cb-definition-list cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up">
+        <dt>Name</dt>
+        <dd>Mary Ellen Richmond</dd>
+      </dl>
+      <dl class="cb-definition-list cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up">
+        <dt>Date of birth</dt>
+        <dd><time datetime="1891-08-05">Aug 5, 1891</time></dd>
+      </dl>
+      <dl class="cb-definition-list cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up">
+        <dt>Legacy ID</dt>
+        <dd>10000000045</dd>
+      </dl>
+    </div>
+
+    <div class="cb-code-block-container">
+      <pre>&lt;div class="cb-flex cb-flex-wrap-wrap"&gt;
+  &lt;dl class="cb-definition-list cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up"&gt;
+    &lt;dt&gt;Name&lt;/dt&gt;
+    &lt;dd&gt;Mary Ellen Richmond&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;dl class="cb-definition-list cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up"&gt;
+    &lt;dt&gt;Date of birth&lt;/dt&gt;
+    &lt;dd&gt;&lt;time datetime="1891-08-05"&gt;Aug 5, 1891&lt;/time&gt;&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;dl class="cb-definition-list cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up"&gt;
+    &lt;dt&gt;Legacy ID&lt;/dt&gt;
+    &lt;dd&gt;10000000045&lt;/dd&gt;
+  &lt;/dl&gt;
+&lt;/div&gt;</pre>
+    </div>
+
+    <h3 id="unpadded" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Unpadded definition lists</h3>
+
+    <p>By default, definition lists have padding at the top, right, and bottom (it's actually applied to the <code class="cb-inline-code">&lt;dt&gt;</code> and <code class="cb-inline-code">&lt;dd&gt;</code> tags within the definition list).</p>
+
+    <p>You can remove the padding by adding the class <code class="cb-inline-code">.unpadded</code> to the <code class="cb-inline-code">&lt;dl&gt;</code> tag.</p>
+
+    <div class="cb-flex cb-flex-wrap-wrap">
+      <dl class="cb-definition-list unpadded cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up">
+        <dt>Name</dt>
+        <dd>Mary Ellen Richmond</dd>
+      </dl>
+      <dl class="cb-definition-list unpadded cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up">
+        <dt>Date of birth</dt>
+        <dd><time datetime="1891-08-05">Aug 5, 1891</time></dd>
+      </dl>
+      <dl class="cb-definition-list unpadded cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up">
+        <dt>Legacy ID</dt>
+        <dd>10000000045</dd>
+      </dl>
+    </div>
+
+    <div class="cb-code-block-container">
+      <pre>&lt;div class="cb-flex cb-flex-wrap-wrap"&gt;
+  &lt;dl class="cb-definition-list unpadded cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up"&gt;
+    &lt;dt&gt;Name&lt;/dt&gt;
+    &lt;dd&gt;Mary Ellen Richmond&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;dl class="cb-definition-list unpadded cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up"&gt;
+    &lt;dt&gt;Date of birth&lt;/dt&gt;
+    &lt;dd&gt;&lt;time datetime="1891-08-05"&gt;Aug 5, 1891&lt;/time&gt;&lt;/dd&gt;
+  &lt;/dl&gt;
+  &lt;dl class="cb-definition-list unpadded cb-column-12-xs cb-column-6-sm cb-column-4-md cb-column-3-lg-up"&gt;
+    &lt;dt&gt;Legacy ID&lt;/dt&gt;
+    &lt;dd&gt;10000000045&lt;/dd&gt;
+  &lt;/dl&gt;
+&lt;/div&gt;</pre>
+    </div>
+  </main>
+</body>
+
+</html>

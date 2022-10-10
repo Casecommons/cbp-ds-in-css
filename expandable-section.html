@@ -10,16 +10,19 @@
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
 
-<body class="baseline">
+<body class="cb-baseline">
   <main class="cb-main">
     <h1 class="cb-h4 cb-bolder"><a class="cb-link" href="./index.html">DS in CSS</a></h1>
     <h2 class="cb-h5 cb-margin-bottom-large">
       Expandable sections
     </h2>
     <p>
-      <code class="cb-inline-code">.cb-expandable</code>
+      Use the <code class="cb-inline-code">&lt;details&gt;</code> and <code class="cb-inline-code">&lt;summary&gt;</code> tags to create an expandable section. Add the class <code class="cb-inline-code">.cb-expandable</code> to the <code class="cb-inline-code">&lt;details&gt;</code> tag.
     </p>
-    <div class="flex gap-default flex-wrap-wrap">
+    <p>
+      Border styling and the open/close toggle icon are provided by the class <code class="cb-inline-code">.cb-expandable</code>. Visibility of the <code class="cb-inline-code">&lt;summary&gt;</code> is provided by the semantic tags.
+    </p>
+    <div class="cb-flex cb-gap-default cb-flex-wrap-wrap">
       <details class="cb-expandable">
         <summary>Hello</summary>
         <div class="cb-pad-default cb-pad-top-none">Yo</div>
@@ -27,11 +30,11 @@
     </div>
 
     <div class="cb-code-block-container">
-      <pre></pre>
+      <pre>&lt;details class="cb-expandable"&gt;
+  &lt;summary&gt;Hello&lt;/summary&gt;
+  &lt;div class="cb-pad-default cb-pad-top-none"&gt;Yo&lt;/div&gt;
+&lt;/details&gt;</pre>
     </div>
-
-    <h3 id="avatar-buttons" class="cb-h6 cb-margin-bottom-large cb-margin-top-large">Avatar buttons</h3>
-
   </main>
 </body>
 
